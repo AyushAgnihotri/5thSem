@@ -1,0 +1,1 @@
+tcpdump -nettti eth0 '(ether dst host 24:b6:fd:55:1c:fc)'

@@ -1,0 +1,5 @@
+smsspamcollection - http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/
+
+how news appears on social media -  https://www.kaggle.com/socialmedianews/how-news-appears-on-social-media/data
+
+sentiment labelled sentences (amazon , yelp . imdb) - https://archive.ics.uci.edu/ml/datasets/Sentiment+Labelled+Sentences

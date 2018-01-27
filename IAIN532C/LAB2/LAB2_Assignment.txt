@@ -1,0 +1,3 @@
+In today lab, Apply Breadth First Search,  Depth First Search and Greedy search for 8 an 15 puzzle problem.
+
+Another problem is :Finding paths from Arad to Bucharest. One map is attached for your reference. 

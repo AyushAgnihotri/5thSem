@@ -1,0 +1,3 @@
+Sender end : nc -w 3 127.0.0.1 1234 < 2_1.txt 
+Receiver end : nc -l -p 1234 > out.txt
+

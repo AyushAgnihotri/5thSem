@@ -1,0 +1,11 @@
+IIM2015004: Ayush Agnihotri
+
+Ans:
+	TCP : The absolute limitation -> 64K (65535 bytes).
+	TCP deals with segments instead of packets.
+	Each TCP segment has a sequence number which is contained inside a TCP header.
+	The actual data sent in a TCP segment is variable.
+	However it can be calculated by function "tcp_maxseg" function in socket.h .
+	UDP : The correct maximum UDP message size is 65507 bytes, as determined by the
+	following formula:
+	0xffff - (sizeof(IP Header) + sizeof(UDP Header)) = 65535-(20+8) = 65507

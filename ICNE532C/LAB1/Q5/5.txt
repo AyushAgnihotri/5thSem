@@ -1,0 +1,23 @@
+IIM2015004: Ayush Agnihotri
+
+Ans:
+	A server socket listens on a single port. All established client connections on that server are a
+	ssociated with that same listening port on the server side of the connection. An established
+	connection is uniquely identified by the combination of client-side and server-side IP/Port
+	pairs. Multiple connections on the same server can share the same server-side IP/Port pair as
+	long as they are associated with different client-side IP/Port pairs, and the server would be
+	able to handle as many clients as available system resources allow it to.
+	On the client-side, it is common practice for new outbound connections to use a random
+	client-side port, in which case it is possible to run out of available ports if you make a lot
+	of connections in a short amount of time.
+
+	a-> On a server, a process is listening on a port. Once it gets a connection, it hands it off to
+	another thread. The communication never hogs the listening port.
+
+	b-> Connections are uniquely identified by the OS by the following 5-tuple: (local-IP,
+	local-port, remote-IP, remote-port, protocol). If any element in the tuple is different, then
+	this is a completely independent connection.
+
+	c-> When a client connects to a server, it picks a random, unused high-order source port.
+	This way, a single client can have up to ~64k connections to the server for the same
+	destination port.

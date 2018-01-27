@@ -1,0 +1,10 @@
+trade
+earn
+fuel
+heat
+housing
+gas
+income
+jobs
+retail
+grain

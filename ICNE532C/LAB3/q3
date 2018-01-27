@@ -1,0 +1,39 @@
+The syntax is:
+sudo ufw deny from {ip-address-here} to any
+
+To block or deny all packets from 192.168.1.5, enter:
+sudo ufw deny/allow from 192.168.1.5 to any
+
+
+sudo ufw enable
+Verify newly added rules, enter:
+$ sudo ufw status numbered
+
+OR
+$ sudo ufw status
+-------------------------------------
+ufw block specific IP and port number
+
+The syntax is:
+ufw deny from {ip-address-here} to any port {port-number-here} ( sudo ufw deny portno. )
+
+To block or deny spammers IP address 202.54.1.5 to port 80, enter:
+sudo ufw deny/allow from 202.54.1.5 to any port 80
+
+Again verify with the following command:
+$ sudo ufw status numbered
+--------------------------------------
+ufw deny specific IP, port number, and protocol
+
+The syntax is:
+sudo ufw deny proto {tcp|udp} from {ip-address-here} to any port {port-number-here}
+
+For example block hacker IP address 202.54.1.1 to tcp port 22, enter:
+$ sudo ufw deny proto tcp from 202.54.1.1 to any port 22
+$ sudo ufw status numbered 
+--------------------------------------------	
+MAC ID
+
+iptables -A INPUT -m mac --mac-source 00:0F:EA:91:04:08 -j DROP
+
+--------------------------------------------

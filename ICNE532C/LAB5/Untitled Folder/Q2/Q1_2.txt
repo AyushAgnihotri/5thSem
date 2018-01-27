@@ -1,0 +1,2 @@
+cryptcat -k vipul 127.0.0.1 1234
+cryptcat -k vipul -l -p 1234

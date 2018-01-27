@@ -1,0 +1,11 @@
+What is the difference between supervised and unsupervised learning?
+Basic difference in layman terms : In supervised learning, the output datasets are provided which are used to train the machine and get the desired outputs whereas in unsupervised learning no datasets are provided, instead the data is clustered into different classes .
+
+Non-probabilistic classifier:
+SVM is non-probabilistic classifier because it puts a text document in a single category (the most likely category) rather than outputting the probability distribution over a set of classes.
+
+Non-linearly separable dataset:
+But for a non-linearly separable dataset, we cannot just simply separate the two categories by a line or hyperplane, because it will give very inaccurate results. So, in this case we need to map our non-linearly separable dataset into a higher dimension, make it linearly separable, apply SVM to create the decision boundaries and then map it again to our original dimensions.
+But it will be very compute intensive work.
+So, to overcome these high computations, we use a trick called the kernel trick.
+A kernel is a function using which we dont need to explicitly map our dataset into higher dimensions. It will be able to do the same job and save us a great amount of Computation and time.
